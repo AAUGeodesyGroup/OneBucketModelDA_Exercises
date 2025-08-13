@@ -1,0 +1,7 @@
+# Ignore everything in this directory
+*
+# Except this file
+!.gitignore
+!01_Single_States
+!02_Ensemble_States
+!03_DA_States_no_loc
