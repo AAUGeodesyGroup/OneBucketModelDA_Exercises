@@ -28,4 +28,8 @@ def linearModel(S, P, K, Dt):
         if t < len(P) - 1:
             S[t + 1] = S[t]
 
-    return Q.ravel(), S.ravel()
+    # Adapt output to match variables in main script
+    if S.size == 1:
+        return Q.item(), S.item()
+    else:
+        return Q.ravel(), S.ravel()
